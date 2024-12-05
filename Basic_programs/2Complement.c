@@ -29,7 +29,7 @@ int main(){
 		else
 			a[i]=0;
 	}
-	printf("\nOnce Complement of the number is \n");
+	printf("\n1's Complement of the number is \n");
 	for(i=0;i<n;i++)
 		printf("%d ",a[i]);
 	carry = 1;
@@ -43,7 +43,7 @@ int main(){
 			carry = 0;
 		}
 	}
-	printf("\nTows Complement of the number is \n");
+	printf("\n2's Complement of the number is \n");
 	for(i=0;i<n;i++)
 		printf("%d ",a[i]);
     return 0;    
