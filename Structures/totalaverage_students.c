@@ -1,16 +1,14 @@
 // Write a C program to find the total, average of n students using structures
 #include<stdio.h>
 struct student{
-char name[50];
+        char name[50];
 	int rno;
 	float marks[3];
 	float total;
     float average;
 };
-int main()
-{
+int main(){
 	int n,sum=0;
-	float avg;
 	printf("Enter the no of students");
 	scanf("%d",&n);
     struct student s[n];
