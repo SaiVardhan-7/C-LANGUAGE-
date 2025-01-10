@@ -2,15 +2,18 @@
 int fact(int a);
 int combination(int n,int r);
 int main(){
-    /* 1
-       1 1
-       1 2 1
+    /*    1
+         1 1
+        1 2 1
        1 3 3 1
-       1 4 6 4 1       */
+      1 4 6 4 1       */
     int n,r;
     printf("Enter n and r values:");
     scanf("%d%d",&n,&r);
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<n;i++){
+        for(int k=n-i;k>0;k--){
+            printf(" ");
+        }
         for(int j=0;j<=i;j++){
            printf("%d ",combination(i,j)); 
         }
